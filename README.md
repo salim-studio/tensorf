@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="tensorf banner" width="100%">
+  <img src="https://raw.githubusercontent.com/salim-studio/tensorf/main/assets/banner.svg" alt="tensorf banner" width="100%">
 </p>
 
 <p align="center">
