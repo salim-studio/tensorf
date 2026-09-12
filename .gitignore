@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Data & models (never commit)
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+*.parquet
+*.pkl
+*.h5
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/

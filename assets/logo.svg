@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="tensorfly logo">
+  <defs>
+    <linearGradient id="wingL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="wingR" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#312E81"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <!-- left wing: tensor cells -->
+  <g>
+    <rect x="28" y="52" width="62" height="62" rx="16" fill="url(#wingL)"/>
+    <rect x="96" y="52" width="34" height="34" rx="10" fill="url(#wingL)" opacity="0.85"/>
+    <rect x="28" y="120" width="34" height="34" rx="10" fill="url(#wingL)" opacity="0.7"/>
+    <rect x="68" y="120" width="62" height="62" rx="16" fill="url(#wingL)" opacity="0.9"/>
+  </g>
+  <!-- right wing: tensor cells -->
+  <g>
+    <rect x="150" y="52" width="62" height="62" rx="16" fill="url(#wingR)"/>
+    <rect x="110" y="52" width="34" height="34" rx="10" fill="url(#wingR)" opacity="0.85"/>
+    <rect x="178" y="120" width="34" height="34" rx="10" fill="url(#wingR)" opacity="0.7"/>
+    <rect x="110" y="120" width="62" height="62" rx="16" fill="url(#wingR)" opacity="0.9"/>
+  </g>
+  <!-- body -->
+  <rect x="112" y="46" width="16" height="148" rx="8" fill="url(#body)"/>
+  <circle cx="120" cy="38" r="10" fill="#312E81"/>
+  <!-- antennae -->
+  <path d="M114 30 C104 18 96 14 88 12" stroke="#312E81" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M126 30 C136 18 144 14 152 12" stroke="#312E81" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <circle cx="86" cy="12" r="5" fill="#22D3EE"/>
+  <circle cx="154" cy="12" r="5" fill="#818CF8"/>
+</svg>
