@@ -1,7 +1,7 @@
 """Classical ML pipeline: scale -> logistic regression -> report (+ KMeans/PCA)."""
 import numpy as np
 
-import tensorfly as tf
+import tensorf as tf
 
 tf.utils.seed_everything(0)
 X = np.random.default_rng(0).standard_normal((300, 4)).astype(np.float32)

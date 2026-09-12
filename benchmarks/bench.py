@@ -1,7 +1,7 @@
-"""tensorfly speed comparison: fusion + parallelism (fair in-library comparisons)."""
+"""tensorf speed comparison: fusion + parallelism (fair in-library comparisons)."""
 import time
 import numpy as np
-import tensorfly as tf
+import tensorf as tf
 
 
 def bench(name, fn, n=5):

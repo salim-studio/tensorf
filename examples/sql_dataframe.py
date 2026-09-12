@@ -1,5 +1,5 @@
-"""SQL -> DataFrame -> Tensor -> model (the tensorfly data-stack loop)."""
-import tensorfly as tf
+"""SQL -> DataFrame -> Tensor -> model (the tensorf data-stack loop)."""
+import tensorf as tf
 
 with tf.db.Database(":memory:") as db:
     db.execute("CREATE TABLE users (id INTEGER, name TEXT, age REAL, income REAL)")

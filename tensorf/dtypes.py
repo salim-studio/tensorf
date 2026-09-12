@@ -1,4 +1,4 @@
-"""tensorfly.dtypes — type names like tf.*"""
+"""tensorf.dtypes — type names like tf.*"""
 from __future__ import annotations
 
 import numpy as np

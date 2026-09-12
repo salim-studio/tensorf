@@ -1,4 +1,4 @@
-"""tensorfly.nn — activations + conv/pool + fused ops (like tf.nn)."""
+"""tensorf.nn — activations + conv/pool + fused ops (like tf.nn)."""
 from __future__ import annotations
 
 import numpy as np

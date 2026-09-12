@@ -1,4 +1,4 @@
-"""tensorfly.losses — like tf.keras.losses (fully differentiable via graph ops)."""
+"""tensorf.losses — like tf.keras.losses (fully differentiable via graph ops)."""
 from __future__ import annotations
 
 from .tensor import Tensor, convert_to_tensor, subtract, square, reduce_mean, log

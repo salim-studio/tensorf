@@ -1,6 +1,6 @@
-"""tensorfly.io — data loading/saving for developers and analysts (like pandas/numpy I/O).
+"""tensorf.io — data loading/saving for developers and analysts (like pandas/numpy I/O).
 
-    import tensorfly as tf
+    import tensorf as tf
     X = tf.io.load_csv("data.csv", header=True)        # -> Tensor
     tf.io.save_csv("out.csv", X)
     d = tf.io.load_json("config.json")
@@ -20,7 +20,7 @@ import numpy as np
 
 def _to_tensor(a, dtype=np.float32):
     from .tensor import Tensor
-    return Tensor(np.asanyarray(a), dtype=None) if isinstance(dtype, type(None)) else __import__("tensorfly.tensor", fromlist=["convert_to_tensor"]).convert_to_tensor(a, dtype=dtype)
+    return Tensor(np.asanyarray(a), dtype=None) if isinstance(dtype, type(None)) else __import__("tensorf.tensor", fromlist=["convert_to_tensor"]).convert_to_tensor(a, dtype=dtype)
 
 
 def load_csv(path, delimiter=",", header=False, dtype=np.float32, usecols=None,
@@ -129,7 +129,7 @@ def read_parquet(path, columns=None):
     try:
         import pandas as pd
     except ImportError as e:
-        raise ImportError("tf.io.read_parquet needs pandas+pyarrow: pip install 'tensorfly[io]'") from e
+        raise ImportError("tf.io.read_parquet needs pandas+pyarrow: pip install 'tensorf[io]'") from e
     df = pd.read_parquet(path, columns=columns)
     from .dataframe import DataFrame
     return DataFrame.from_pandas(df)
@@ -139,7 +139,7 @@ def write_parquet(path, data, **kw) -> str:
     try:
         import pandas as pd
     except ImportError as e:
-        raise ImportError("tf.io.write_parquet needs pandas+pyarrow: pip install 'tensorfly[io]'") from e
+        raise ImportError("tf.io.write_parquet needs pandas+pyarrow: pip install 'tensorf[io]'") from e
     from .tensor import Tensor
     from .dataframe import DataFrame
     if isinstance(data, DataFrame):

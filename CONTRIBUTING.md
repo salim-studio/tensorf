@@ -1,19 +1,19 @@
-# Contributing to tensorfly
+# Contributing to tensorf
 
-Thanks for your interest! tensorfly is a NumPy-only, TensorFlow-compatible ML framework. Keep contributions small, tested, and dependency-free.
+Thanks for your interest! tensorf is a NumPy-only, TensorFlow-compatible ML framework. Keep contributions small, tested, and dependency-free.
 
 ## Setup
 
 ```bash
-git clone https://github.com/salim-studio/tensorfly.git
-cd tensorfly
+git clone https://github.com/salim-studio/tensorf.git
+cd tensorf
 pip install -e .[all]
 python -m pytest tests -q
 ```
 
 ## Ground rules
 
-1. **Core stays NumPy-only.** New hard dependencies are rejected; optional integrations (pandas, duckdb, matplotlib) must be lazy imports with a clear error message pointing at the right extra (`pip install "tensorfly[io]"`, `[db]`, `[viz]`).
+1. **Core stays NumPy-only.** New hard dependencies are rejected; optional integrations (pandas, duckdb, matplotlib) must be lazy imports with a clear error message pointing at the right extra (`pip install "tensorf[io]"`, `[db]`, `[viz]`).
 2. **TF-compatible naming.** Public functions mirror `tensorflow` / `tf.keras` / `sklearn` names where an equivalent exists.
 3. **English everywhere.** Code, docstrings, comments, and docs are in English.
 4. **Every feature ships with a test** in `tests/` and a runnable snippet (README, `docs/`, or `examples/`).
@@ -27,4 +27,4 @@ python -m pytest tests -q
 
 ## Reporting issues
 
-Include: tensorfly version (`tf.__version__`), Python/NumPy versions, minimal reproducer, expected vs actual output.
+Include: tensorf version (`tf.__version__`), Python/NumPy versions, minimal reproducer, expected vs actual output.

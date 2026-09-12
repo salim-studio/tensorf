@@ -1,4 +1,4 @@
-"""tensorfly.random — like tf.random."""
+"""tensorf.random — like tf.random."""
 from __future__ import annotations
 
 import numpy as np

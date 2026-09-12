@@ -1,4 +1,4 @@
-"""tensorfly.parallel — acceleration engine (multithreading + fusion).
+"""tensorf.parallel — acceleration engine (multithreading + fusion).
 
 Speed sources vs tensorflow (CPU):
 1. Chunked ThreadPool for element-wise ops — numpy is single-threaded there.

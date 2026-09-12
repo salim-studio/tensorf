@@ -1,4 +1,4 @@
-"""tensorfly.callbacks — like tf.keras.callbacks."""
+"""tensorf.callbacks — like tf.keras.callbacks."""
 from __future__ import annotations
 
 import csv

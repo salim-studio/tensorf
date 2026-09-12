@@ -1,4 +1,4 @@
-"""tensorfly.metrics — like tf.keras.metrics."""
+"""tensorf.metrics — like tf.keras.metrics."""
 from __future__ import annotations
 
 import numpy as np

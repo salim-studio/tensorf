@@ -1,4 +1,4 @@
-"""tensorfly.utils — general utilities (seed, to_categorical, save/load...)."""
+"""tensorf.utils — general utilities (seed, to_categorical, save/load...)."""
 from __future__ import annotations
 
 import os

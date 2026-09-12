@@ -1,8 +1,10 @@
 # Changelog
 
-All notable changes to tensorfly are documented here. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+All notable changes to tensorf are documented here. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
+### Changed
+- Renamed project and package `tensorfly` → `tensorf` (`import tensorf`, repo `salim-studio/tensorf`, new wordmark with cyan "f").
 
 ## [0.2.0] - 2026-09-12
 ### Added

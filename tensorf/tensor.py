@@ -1,4 +1,4 @@
-"""tensorfly.tensor — Tensor + Variable core and creation ops (like tf.*)."""
+"""tensorf.tensor — Tensor + Variable core and creation ops (like tf.*)."""
 from __future__ import annotations
 
 from typing import Any, Callable, Sequence
@@ -135,7 +135,7 @@ class Tensor:
         return float(self._data)
 
     def __repr__(self):
-        return f"tensorfly.Tensor(shape={self.shape}, dtype={self.dtype})\\n{self._data}"
+        return f"tensorf.Tensor(shape={self.shape}, dtype={self.dtype})\\n{self._data}"
 
     # TF-style helpers
     def assign(self, value):

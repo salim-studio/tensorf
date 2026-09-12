@@ -1,6 +1,6 @@
-"""tensorfly.ml — classical machine learning (sklearn-like, numpy only).
+"""tensorf.ml — classical machine learning (sklearn-like, numpy only).
 
-    import tensorfly as tf
+    import tensorf as tf
     clf = tf.ml.LogisticRegression().fit(X_train, y_train)
     print(clf.score(X_test, y_test))
     km = tf.ml.KMeans(k=3).fit(X)

@@ -1,5 +1,5 @@
 import numpy as np
-import tensorfly as tf
+import tensorf as tf
 
 
 def test_constant_and_ops():

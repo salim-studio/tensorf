@@ -1,6 +1,6 @@
-"""tensorfly.database — database tasks (SQLite by default + optional duckdb/SQLAlchemy).
+"""tensorf.database — database tasks (SQLite by default + optional duckdb/SQLAlchemy).
 
-    import tensorfly as tf
+    import tensorf as tf
 
     db = tf.db.Database("app.db")
     db.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER, name TEXT, age REAL)")
@@ -111,7 +111,7 @@ class Database:
         try:
             import pandas as pd
         except ImportError as e:
-            raise ImportError("read_pandas needs pandas: pip install 'tensorfly[io]'") from e
+            raise ImportError("read_pandas needs pandas: pip install 'tensorf[io]'") from e
         return pd.read_sql(sql, self.conn, params=params)
 
     # -- write helpers --
@@ -178,7 +178,7 @@ class Database:
         return False
 
     def __repr__(self):
-        return f"tensorfly.Database(path={self.path!r}, tables={self.tables() if not self._closed else '?'})"
+        return f"tensorf.Database(path={self.path!r}, tables={self.tables() if not self._closed else '?'})"
 
 
 # -- functional API (like pandas.read_sql) --
@@ -215,7 +215,7 @@ def read_duckdb(sql, path=":memory:"):
     try:
         import duckdb
     except ImportError as e:
-        raise ImportError("read_duckdb needs duckdb: pip install 'tensorfly[db]'") from e
+        raise ImportError("read_duckdb needs duckdb: pip install 'tensorf[db]'") from e
     from .dataframe import DataFrame
     rel = duckdb.connect(path).execute(sql).fetchdf()
     return DataFrame.from_pandas(rel)

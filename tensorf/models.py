@@ -1,4 +1,4 @@
-"""tensorfly.models — Sequential + Model (like tf.keras)."""
+"""tensorf.models — Sequential + Model (like tf.keras)."""
 from __future__ import annotations
 
 import pickle
@@ -243,7 +243,7 @@ class Sequential:
 
 
 class Model(Sequential):
-    """Subclassing API: class MyModel(tensorfly.Model): def call(...)"""
+    """Subclassing API: class MyModel(tensorf.Model): def call(...)"""
 
     def call(self, x, training=True):
         raise NotImplementedError

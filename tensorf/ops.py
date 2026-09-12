@@ -1,4 +1,4 @@
-"""tensorfly.ops — common TF ops (shape + math + reductions + linalg)."""
+"""tensorf.ops — common TF ops (shape + math + reductions + linalg)."""
 from __future__ import annotations
 
 import numpy as np

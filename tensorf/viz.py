@@ -1,4 +1,4 @@
-"""tensorfly.viz — quick plots (optional matplotlib)."""
+"""tensorf.viz — quick plots (optional matplotlib)."""
 from __future__ import annotations
 
 
@@ -6,7 +6,7 @@ def _plt():
     try:
         import matplotlib.pyplot as plt
     except ImportError as e:
-        raise ImportError("tf.viz needs matplotlib: pip install 'tensorfly[viz]'") from e
+        raise ImportError("tf.viz needs matplotlib: pip install 'tensorf[viz]'") from e
     return plt
 
 

@@ -1,6 +1,6 @@
 import os
 import numpy as np
-import tensorfly as tf
+import tensorf as tf
 
 TMP = os.environ.get("TEMP", "/tmp")
 
@@ -86,7 +86,7 @@ def test_new_layers_and_optimizers():
 
 
 def test_text_utils():
-    tok = tf.text.Tokenizer().fit_on_texts(["hello world", "hello tensorfly"])
+    tok = tf.text.Tokenizer().fit_on_texts(["hello world", "hello tensorf"])
     seq = tok.texts_to_sequences(["hello world"])
     assert seq[0][0] == tok.word_index["hello"]
     M, vocab = tf.text.tfidf_matrix(["hello world", "hello fly"])

@@ -1,6 +1,6 @@
-"""tensorfly.dataframe — lightweight table for data analysts (pandas-like, no pandas).
+"""tensorf.dataframe — lightweight table for data analysts (pandas-like, no pandas).
 
-    import tensorfly as tf
+    import tensorf as tf
     df = tf.DataFrame({"age": [20, 30, 25], "city": ["oran", "alger", "oran"]})
     df.head()            # print first rows
     df.describe()        # numeric stats
@@ -322,7 +322,7 @@ class DataFrame:
         try:
             import pandas as pd
         except ImportError as e:
-            raise ImportError("to_pandas needs pandas: pip install 'tensorfly[io]'") from e
+            raise ImportError("to_pandas needs pandas: pip install 'tensorf[io]'") from e
         return pd.DataFrame({k: np.asanyarray(v) for k, v in self._data.items()})
 
     def to_csv(self, path, **kw) -> str:

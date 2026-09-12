@@ -1,4 +1,4 @@
-"""tensorfly.text — text encoding for NLP (Tokenizer + ngrams + light tfidf)."""
+"""tensorf.text — text encoding for NLP (Tokenizer + ngrams + light tfidf)."""
 from __future__ import annotations
 
 import re

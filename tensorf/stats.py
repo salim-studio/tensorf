@@ -1,4 +1,4 @@
-"""tensorfly.stats — fast stats for data analysts (numpy only)."""
+"""tensorf.stats — fast stats for data analysts (numpy only)."""
 from __future__ import annotations
 
 import numpy as np

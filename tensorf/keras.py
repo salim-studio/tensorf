@@ -1,4 +1,4 @@
-"""tensorfly.keras — the tf.keras interface."""
+"""tensorf.keras — the tf.keras interface."""
 from __future__ import annotations
 
 from . import layers as layers

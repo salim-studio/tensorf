@@ -1,4 +1,4 @@
-"""tensorfly.autodiff — tf.GradientTape."""
+"""tensorf.autodiff — tf.GradientTape."""
 from __future__ import annotations
 
 import numpy as np

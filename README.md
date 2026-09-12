@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="tensorfly banner" width="100%">
+  <img src="assets/banner.svg" alt="tensorf banner" width="100%">
 </p>
 
 <p align="center">
-  <a href="https://github.com/salim-studio/tensorfly"><img src="https://img.shields.io/badge/repo-salim--studio%2Ftensorfly-4F46E5?logo=github" alt="GitHub repo"></a>
+  <a href="https://github.com/salim-studio/tensorf"><img src="https://img.shields.io/badge/repo-salim--studio%2Ftensorf-4F46E5?logo=github" alt="GitHub repo"></a>
   <img src="https://img.shields.io/badge/version-0.2.0-0891B2" alt="version">
   <img src="https://img.shields.io/badge/python-%3E%3D3.9-3776AB?logo=python&logoColor=white" alt="python">
   <img src="https://img.shields.io/badge/dependencies-numpy_only-22C55E" alt="numpy only">
@@ -11,14 +11,14 @@
   <img src="https://img.shields.io/badge/tests-15_passing-16A34A" alt="tests">
 </p>
 
-# 🦋 tensorfly
+# 🦋 tensorf
 
-**TensorFlow-compatible machine learning, minus the weight.** `tensorfly` mirrors the `tensorflow` / `tf.keras` API — same function names, same model code — but runs on a NumPy-only, CPU-tuned engine. No 500&nbsp;MB install, no CUDA required to get started.
+**TensorFlow-compatible machine learning, minus the weight.** `tensorf` mirrors the `tensorflow` / `tf.keras` API — same function names, same model code — but runs on a NumPy-only, CPU-tuned engine. No 500&nbsp;MB install, no CUDA required to get started.
 
-And it goes further: tensorfly ships a full **data stack** (SQL databases, DataFrames, I/O, stats, preprocessing, classical ML, NLP utilities), so one tiny library takes you from raw CSV to trained model.
+And it goes further: tensorf ships a full **data stack** (SQL databases, DataFrames, I/O, stats, preprocessing, classical ML, NLP utilities), so one tiny library takes you from raw CSV to trained model.
 
 ```python
-import tensorfly as tf
+import tensorf as tf
 
 x = tf.constant([[1., 2.], [3., 4.]])
 with tf.GradientTape() as tape:
@@ -33,7 +33,7 @@ model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=
 model.fit(X_train, y_train, epochs=5, batch_size=64)
 ```
 
-## Why tensorfly?
+## Why tensorf?
 
 | Audience | What you get |
 |---|---|
@@ -59,11 +59,11 @@ model.fit(X_train, y_train, epochs=5, batch_size=64)
 ## 📦 Installation
 
 ```bash
-pip install tensorfly            # core: numpy only
-pip install "tensorfly[io]"      # + pandas, pyarrow (Parquet)
-pip install "tensorfly[db]"      # + duckdb, sqlalchemy
-pip install "tensorfly[viz]"     # + matplotlib
-pip install "tensorfly[all]"     # everything
+pip install tensorf            # core: numpy only
+pip install "tensorf[io]"      # + pandas, pyarrow (Parquet)
+pip install "tensorf[db]"      # + duckdb, sqlalchemy
+pip install "tensorf[viz]"     # + matplotlib
+pip install "tensorf[all]"     # everything
 ```
 
 Requires Python ≥ 3.9.
@@ -72,7 +72,7 @@ Requires Python ≥ 3.9.
 
 **Deep learning (Keras-style):**
 ```python
-import tensorfly as tf
+import tensorf as tf
 
 m = tf.keras.Sequential([
     tf.keras.layers.Dense(64, activation="relu"),
@@ -109,12 +109,12 @@ More in [`examples/`](examples/) and [`docs/API.md`](docs/API.md).
 ## 🗂️ Project layout
 
 ```
-tensorfly/
+tensorf/
 ├── assets/            brand (logo.svg, banner.svg)
 ├── benchmarks/        CPU benchmarks vs baselines
 ├── docs/              API map + guides
 ├── examples/          quickstart, sql_dataframe, ml_pipeline
-├── tensorfly/         the library (28 modules, numpy-only core)
+├── tensorf/         the library (28 modules, numpy-only core)
 │   ├── tensor.py ops.py nn.py autodiff.py   eager tensors + autograd
 │   ├── layers.py models.py keras.py         Dense/Conv/RNN/LSTM/GRU/Attention
 │   ├── optimizers.py losses.py metrics.py   AdamW/Lion, huber/hinge, F1/AUC

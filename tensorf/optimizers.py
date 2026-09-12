@@ -1,4 +1,4 @@
-"""tensorfly.optimizers — like tf.keras.optimizers (with fast fused versions)."""
+"""tensorf.optimizers — like tf.keras.optimizers (with fast fused versions)."""
 from __future__ import annotations
 
 import numpy as np

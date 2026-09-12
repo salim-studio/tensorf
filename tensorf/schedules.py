@@ -1,4 +1,4 @@
-"""tensorfly.schedules — learning-rate schedules (work with any optimizer via callable lr)."""
+"""tensorf.schedules — learning-rate schedules (work with any optimizer via callable lr)."""
 from __future__ import annotations
 
 import numpy as np

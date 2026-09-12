@@ -1,4 +1,4 @@
-"""tensorfly.function — like tf.function (trace + fast-path)."""
+"""tensorf.function — like tf.function (trace + fast-path)."""
 from __future__ import annotations
 
 import functools

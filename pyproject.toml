@@ -1,5 +1,5 @@
 [project]
-name = "tensorfly"
+name = "tensorf"
 version = "0.2.0"
 description = "TensorFlow-compatible ML framework on NumPy: tensors, Keras-style deep learning, DataFrames, SQL databases, stats, preprocessing, classical ML and NLP — CPU-fast with zero heavy dependencies"
 readme = "README.md"
@@ -25,18 +25,18 @@ dependencies = ["numpy>=1.24"]
 optional-dependencies = { fast = ["scipy>=1.10"], io = ["pandas>=1.5", "pyarrow>=10"], db = ["sqlalchemy>=2.0", "duckdb>=0.8"], viz = ["matplotlib>=3.5"], all = ["scipy>=1.10", "pandas>=1.5", "pyarrow>=10", "sqlalchemy>=2.0", "duckdb>=0.8", "matplotlib>=3.5"] }
 
 [project.urls]
-Homepage = "https://github.com/salim-studio/tensorfly"
-Repository = "https://github.com/salim-studio/tensorfly"
-Issues = "https://github.com/salim-studio/tensorfly/issues"
-Documentation = "https://github.com/salim-studio/tensorfly#readme"
-Changelog = "https://github.com/salim-studio/tensorfly/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/salim-studio/tensorf"
+Repository = "https://github.com/salim-studio/tensorf"
+Issues = "https://github.com/salim-studio/tensorf/issues"
+Documentation = "https://github.com/salim-studio/tensorf#readme"
+Changelog = "https://github.com/salim-studio/tensorf/blob/main/CHANGELOG.md"
 
 [build-system]
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["tensorfly*"]
+include = ["tensorf*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

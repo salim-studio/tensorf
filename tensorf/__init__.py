@@ -1,6 +1,6 @@
-"""tensorfly — a faster TensorFlow alternative (CPU) with the same names.
+"""tensorf — a faster TensorFlow alternative (CPU) with the same names.
 
-    import tensorfly as tf
+    import tensorf as tf
     x = tf.constant([[1., 2.], [3., 4.]])
     with tf.GradientTape() as tape:
         y = tf.reduce_sum(x * x)

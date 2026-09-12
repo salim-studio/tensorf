@@ -1,6 +1,6 @@
-# tensorfly API map
+# tensorf API map
 
-One page to find anything. All imports work as `import tensorfly as tf`.
+One page to find anything. All imports work as `import tensorf as tf`.
 
 ## Core tensors (TF-compatible)
 

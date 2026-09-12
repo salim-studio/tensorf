@@ -1,4 +1,4 @@
-"""tensorfly.data — like tf.data.Dataset (fast with prefetch)."""
+"""tensorf.data — like tf.data.Dataset (fast with prefetch)."""
 from __future__ import annotations
 
 import threading

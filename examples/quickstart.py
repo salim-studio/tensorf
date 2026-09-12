@@ -1,9 +1,9 @@
-"""tensorfly quickstart: autograd + a tiny neural net (runs with numpy only)."""
+"""tensorf quickstart: autograd + a tiny neural net (runs with numpy only)."""
 import numpy as np
 
-import tensorfly as tf
+import tensorf as tf
 
-print("tensorfly", tf.__version__, tf.info())
+print("tensorf", tf.__version__, tf.info())
 
 # 1. Autograd, TF-style
 x = tf.Variable([2.0, 3.0])

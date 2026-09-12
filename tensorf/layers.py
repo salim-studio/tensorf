@@ -1,4 +1,4 @@
-"""tensorfly.layers — like tf.keras.layers."""
+"""tensorf.layers — like tf.keras.layers."""
 from __future__ import annotations
 
 import numpy as np

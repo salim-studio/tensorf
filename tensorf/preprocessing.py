@@ -1,6 +1,6 @@
-"""tensorfly.preprocessing — data preparation (sklearn-like, works on Tensor/numpy/DataFrame).
+"""tensorf.preprocessing — data preparation (sklearn-like, works on Tensor/numpy/DataFrame).
 
-    import tensorfly as tf
+    import tensorf as tf
     X_train, X_test, y_train, y_test = tf.preprocessing.train_test_split(X, y)
     sc = tf.preprocessing.StandardScaler().fit(X_train)
     Xtr = sc.transform(X_train)
