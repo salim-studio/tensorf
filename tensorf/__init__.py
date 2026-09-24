@@ -81,6 +81,8 @@ concat_alias = concat
 maximum_alias = maximum
 
 __version__ = "0.2.0"
+__author__ = "salim-slimani"
+__copyright__ = "Copyright (c) 2026 salim-slimani"
 
 newaxis = np.newaxis
 pi = np.pi

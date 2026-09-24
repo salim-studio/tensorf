@@ -5,7 +5,7 @@ description = "TensorFlow-compatible ML framework on NumPy: tensors, Keras-style
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "salim-studio", email = "salim-studio@users.noreply.github.com" }]
+authors = [{ name = "salim-slimani", email = "slimanisalim.eco@gmail.com" }]
 keywords = ["tensorflow", "keras", "deep-learning", "machine-learning", "dataframe", "sql", "database", "statistics", "preprocessing", "nlp", "numpy"]
 classifiers = [
   "Development Status :: 4 - Beta",

@@ -137,4 +137,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [CHANGELOG.md](CHANGELOG.md).
 
 ## 📄 License
 
-MIT © 2026 salim-studio. See [LICENSE](LICENSE).
+MIT © 2026 salim-slimani. See [LICENSE](LICENSE).
